@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destinations | Digital Travel Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>Digital Travel Diary</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+  <div class="card" onclick="showInfo('santorini')">
+    <img src="images/sant.jfif" alt="Santorini">
+    <div class="overlay">Santorini</div>
+</div>
+
+<div class="card" onclick="showInfo('dubai')">
+    <img src="images/dubai.jfif" alt="Dubai">
+    <div class="overlay">Dubai</div>
+</div>
+
+</section>
+
+<div id="infoBox"></div>
+
+<footer>
+    <p>© 2026 Digital Travel Diary</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

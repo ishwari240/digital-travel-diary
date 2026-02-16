@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Travel Diary | Exploring Places, Creating Memories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+    <h2>Digital Travel Diary</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<p class="tagline">Exploring Places, Creating Memories</p>
+
+<!-- HERO SECTION -->
+<section class="hero">
+   <div class="card" onclick="showInfo('paris')">
+    <img src="images/paris.jfif" alt="Paris">
+    <div class="overlay">Paris</div>
+</div>
+
+<div class="card" onclick="showInfo('bali')">
+    <img src="images/bali.jfif" alt="Bali">
+    <div class="overlay">Bali</div>
+</div>
+
+<div class="card" onclick="showInfo('tokyo')">
+    <img src="images/tokyo.jfif" alt="Tokyo">
+    <div class="overlay">Tokyo</div>
+</div>
+
+</section>
+
+<div id="infoBox"></div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Digital Travel Diary | Exploring Places, Creating Memories</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

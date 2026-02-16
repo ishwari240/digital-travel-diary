@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: black;
+    color: pink;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #ff4da6;
+    color: black;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* TAGLINE */
+.tagline {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+    color: #ff99cc;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* IMAGE CARD */
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 20, 147, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 22px;
+    color: black;
+    transition: 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* INFO BOX */
+#infoBox {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 20, 147, 0.15);
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #ffd6e8;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #ff4da6;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
