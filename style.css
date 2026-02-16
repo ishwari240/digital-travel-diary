@@ -5,99 +5,108 @@
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
-    background: black;
-    color: pink;
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(135deg, #000814, #001d3d);
+    color: #eaeaea;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #ff4da6;
-    color: black;
-    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 18px 50px;
+    background: #000814;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
+.logo {
+    font-size: 22px;
     font-weight: bold;
+    color: #4da3ff;
 }
 
-/* TAGLINE */
-.tagline {
-    text-align: center;
-    margin: 15px 0;
-    font-style: italic;
-    color: #ff99cc;
+.nav-links a {
+    color: #eaeaea;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-/* HERO SECTION */
+.nav-links a:hover {
+    color: #4da3ff;
+}
+
+/* HERO */
 .hero {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    text-align: center;
+    padding: 70px 20px 40px;
 }
 
-/* IMAGE CARD */
+.hero h1 {
+    font-size: 36px;
+    color: #4da3ff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.85;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
 .card {
     position: relative;
-    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
 }
 
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* OVERLAY */
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(255, 20, 147, 0.6);
+    background: rgba(0, 29, 61, 0.85);
+    opacity: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    font-size: 22px;
-    color: black;
-    transition: 0.3s;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.4s;
 }
 
 .card:hover .overlay {
     opacity: 1;
 }
 
-/* INFO BOX */
-#infoBox {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(255, 20, 147, 0.15);
-    border-radius: 10px;
-    font-size: 17px;
-    line-height: 1.6;
-    color: #ffd6e8;
-}
-
-/* ABOUT */
-.about {
-    padding: 40px;
-    text-align: center;
+.overlay h3 {
+    color: #4da3ff;
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
 footer {
-    background: #ff4da6;
-    color: black;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
+    background: #000814;
+    font-size: 14px;
 }
