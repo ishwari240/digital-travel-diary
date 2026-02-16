@@ -2,50 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Digital Travel Diary | Exploring Places, Creating Memories</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Travel Diary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVIGATION BAR -->
 <nav class="navbar">
-    <h2>Digital Travel Diary</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
+    <div class="logo">Digital Travel Diary</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
 </nav>
 
-<p class="tagline">Exploring Places, Creating Memories</p>
+<header class="hero">
+    <h1>Exploring Places, Creating Memories</h1>
+    <p>A visual journey through places, cultures, and unforgettable experiences.</p>
+</header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-   <div class="card" onclick="showInfo('paris')">
-    <img src="images/paris.jfif" alt="Paris">
-    <div class="overlay">Paris</div>
-</div>
+<section class="gallery">
+    <div class="card">
+        <img src="images/travel1.jpg">
+        <div class="overlay">
+            <h3>Coastal Escape</h3>
+            <p>Peaceful shores, cool breeze, and endless blue horizons.</p>
+        </div>
+    </div>
 
-<div class="card" onclick="showInfo('bali')">
-    <img src="images/bali.jfif" alt="Bali">
-    <div class="overlay">Bali</div>
-</div>
+    <div class="card">
+        <img src="images/travel2.jpg">
+        <div class="overlay">
+            <h3>Historic Streets</h3>
+            <p>Every corner whispers stories of culture and heritage.</p>
+        </div>
+    </div>
 
-<div class="card" onclick="showInfo('tokyo')">
-    <img src="images/tokyo.jfif" alt="Tokyo">
-    <div class="overlay">Tokyo</div>
-</div>
+    <div class="card">
+        <img src="images/travel3.jpg">
+        <div class="overlay">
+            <h3>Mountain Calm</h3>
+            <p>Where silence meets the sky and time slows down.</p>
+        </div>
+    </div>
 
+    <div class="card">
+        <img src="images/travel4.jpg">
+        <div class="overlay">
+            <h3>City Lights</h3>
+            <p>Vibrant nights, reflections, and modern wonders.</p>
+        </div>
+    </div>
 </section>
 
-<div id="infoBox"></div>
-
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Digital Travel Diary | Exploring Places, Creating Memories</p>
+    <p>© 2026 Digital Travel Diary | Designed by Ishwari</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
