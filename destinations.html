@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Destinations | Digital Travel Diary</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Destinations</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav class="navbar">
-    <h2>Digital Travel Diary</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
+  <h2>Travel Gallery</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="about.html">About</a>
+  </div>
 </nav>
 
-<section class="hero">
-  <div class="card" onclick="showInfo('santorini')">
-    <img src="images/sant.jfif" alt="Santorini">
-    <div class="overlay">Santorini</div>
-</div>
+<section class="gallery">
 
-<div class="card" onclick="showInfo('dubai')">
-    <img src="images/dubai.jfif" alt="Dubai">
+  <div class="card" onclick="openModal('santorini')">
+    <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e">
+    <div class="overlay">Santorini</div>
+  </div>
+
+  <div class="card" onclick="openModal('dubai')">
+    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
     <div class="overlay">Dubai</div>
-</div>
+  </div>
 
 </section>
 
-<div id="infoBox"></div>
-
-<footer>
-    <p>© 2026 Digital Travel Diary</p>
-</footer>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2 id="title"></h2>
+    <p id="desc"></p>
+  </div>
+</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
